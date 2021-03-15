@@ -9,7 +9,7 @@ http://bit.ly/3bJLBUS
 
 * Data en bruto de los planes y guias: 
 
-/data
+/data  
 /dataguia
 
 * Herramienta prototipo para realizar comparaciones
