@@ -2,7 +2,7 @@
 Datos sobre comparacion de planes y guias de estudio en informatica:
 
 * articulo:
-preprint_comparagraph.pdf
+por preparar.
 
 * Data usada para las comparaciones:
 http://bit.ly/3bJLBUS
@@ -12,7 +12,14 @@ http://bit.ly/3bJLBUS
 /data  
 /dataguia
 
-* Herramienta prototipo para realizar comparaciones
+* Data codificada usada en el estudio
+/data_codificada
+
+* Imagenes usadas en el estudio
+/images_del_estudio
+
+
+* Herramienta prototipo para realizar comparaciones (en desarrollo)
 
 https://comparagraphfront.herokuapp.com/
 
