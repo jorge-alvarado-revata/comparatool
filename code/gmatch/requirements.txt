@@ -1,0 +1,8 @@
+decorator
+scipy
+networkx==2.5
+numpy
+cython
+matplotlib
+pandas
+icecream

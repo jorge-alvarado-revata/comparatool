@@ -12,12 +12,19 @@ http://bit.ly/3bJLBUS
 /data  
 /dataguia
 
-* Data codificada usada en el estudio
+* Data codificada usada en el estudio:
+
 /data_codificada
 
-* Imagenes usadas en el estudio
+* Imagenes usadas en el estudio:
+
 /images_del_estudio
 
+* Codigo fuente de scripts
+
+/code
+
+Contiene la implementacion de los scripts python de comparacion.
 
 * Herramienta prototipo para realizar comparaciones (en desarrollo)
 
