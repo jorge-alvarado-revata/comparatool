@@ -7,7 +7,7 @@ G = factory_graph(f_acm68, f_acm68_enlaces)
 print("Nodo G")
 ic(len(G.nodes))
 ic(len(G.edges))
-draw_graph(G, 'images/sisuni2018/G_acm2013.png', f_acm68)
+draw_graph(G, '/home/su/tesis-sistemas/scripts/gmatch/images/sisuni2018/G_acm2013.png', f_acm68)
 
 # comparaciones
 print('--------------------------------')
@@ -18,7 +18,7 @@ ic(len(H.edges))
 
 print("modelo 1:")
 
-draw_graph(H, 'images/sisuni2018/H_sisuni2018_cmp_acm68_m1.png', f_uni2018_acm68)
+draw_graph(H, '/home/su/tesis-sistemas/scripts/gmatch/images/sisuni2018/H_sisuni2018_cmp_acm68_m1.png', f_uni2018_acm68)
 
 compara(G,H,"acm68", "sisuni2018 con links de acm68")
 
@@ -39,15 +39,15 @@ ic(ged)
 
 # def draw_graph(S, f_outname, f_inname, mcs=None) 
 # S y f_inname deben ser sobre el mismo nodo
-draw_graph(H, 'images/sisuni2018/H_sisuni2018_cmp_acm68_m1_mcs.png', f_uni2018_acm68, mcs)
+draw_graph(H, '/home/su/tesis-sistemas/scripts/gmatch/images/sisuni2018/H_sisuni2018_cmp_acm68_m1_mcs.png', f_uni2018_acm68, mcs)
 
-draw_mix_graph(H, 'images/sisuni2018/H_sisuni2018_cmp_acm68_m1_mcs_mix.png', f_uni2018_acm68, mcs, G)
+draw_mix_graph(H, '/home/su/tesis-sistemas/scripts/gmatch/images/sisuni2018/H_sisuni2018_cmp_acm68_m1_mcs_mix.png', f_uni2018_acm68, mcs, G)
 # sistemas 2009 model 2 (relaciones originales de la carrera)
 # Todo
 
 
 T = factory_graph(f_uni2018_acm68, f_uni2018_acm68_m2)
-draw_graph(T, 'images/sisuni2018/H_sisuni2018_cmp_acm68_m2.png', f_uni2018_acm68)
+draw_graph(T, '/home/su/tesis-sistemas/scripts/gmatch/images/sisuni2018/H_sisuni2018_cmp_acm68_m2.png', f_uni2018_acm68)
 print("Modelo 2")
 compara(G,T,"acm68", "uni sistemas 2018 con link de sistemas 2018")
 
@@ -72,8 +72,8 @@ ged = distance(num_node, len(G.nodes), len(T.nodes))
 ic(ged)
 
 
-draw_graph(T, 'images/sisuni2018/H_sisuni2018_cmp_acm68_m2_mcs.png', f_uni2018_acm68, mcs)
-draw_mix_graph(T, 'images/sisuni2018/H_sisuni2018_cmp_acm68_m2_mcs_mix.png', f_uni2018_acm68, mcs, G)
+draw_graph(T, '/home/su/tesis-sistemas/scripts/gmatch/images/sisuni2018/H_sisuni2018_cmp_acm68_m2_mcs.png', f_uni2018_acm68, mcs)
+draw_mix_graph(T, '/home/su/tesis-sistemas/scripts/gmatch/images/sisuni2018/H_sisuni2018_cmp_acm68_m2_mcs_mix.png', f_uni2018_acm68, mcs, G)
 
 
 # obtiene nodos y enlaces comunes

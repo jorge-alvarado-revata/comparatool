@@ -6,6 +6,11 @@ from networkx.algorithms import similarity
 import gmatch4py as gm
 from icecream import ic
 
+options = {
+    'node_color': 'black',
+    'node_size': 100,
+    'width': 3,
+}
 
 # funcion devuelve el Maximo comun subgrafo
 
@@ -58,13 +63,13 @@ def getLabels(f_name):
     df1 = pd.read_csv(f_name)
     df1_data = df1[['id','nombre']]
     #dic_label = {(k+1):v for (k,v) in df1_data.id.items()}
-    dic_label = {df1_data['id'][x]:df1_data['id'][x] for x in range(len(df1_data))}
+    dic_label = {df1_data['id'][x]:df1_data['nombre'][x] for x in range(len(df1_data))}
 
     return dic_label
 # dibuja el grafo dado S, si mcs pinta el mcs de otro color
 def draw_graph(S, f_outname, f_inname, mcs=None):
     pos = nx.shell_layout(S)
-    #pos = nx.spring_layout(S)
+    #pos = nx.spring_layout(S, seed=3113794652)
     d_labels = getLabels(f_inname)
     ic(d_labels)
     nx.draw_networkx_labels(S, pos, labels=d_labels)

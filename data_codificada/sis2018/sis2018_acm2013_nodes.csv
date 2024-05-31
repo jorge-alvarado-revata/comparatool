@@ -6,14 +6,17 @@ id,nombre
 5,COSCMat201
 6,cs175
 7,Mat267
+8,CSC140
 9,CS475
 10,CSU-DS
 11,UH-AI
 12,CWRU
-13,RU STY1
+13,RU-STY1
 14,NNSU-IPP
 15,Utrect-LC
+16,CPSC215
 17,FIT3063
+19,CS2200
 21,CSC301
 22,CSWP
 23,CSMP
@@ -23,6 +26,7 @@ id,nombre
 27,fis1
 28,q1
 29,cal3
+31,dsw
 32,sed
 33,mn
 34,pm
@@ -31,10 +35,3 @@ id,nombre
 38,ds
 39,io
 44,ii
-45,gp
-46,si
-47,md
-48,ta
-49,ae
-50,tsi
-51,gi

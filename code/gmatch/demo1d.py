@@ -13,13 +13,13 @@ lenGEdges = len(G.edges)
 ic(lenGNodes)
 ic(lenGEdges)
 
-draw_graph(G, 'images/pucp2020/G_acm2013.png', f_acm2013)
+draw_graph(G, '/home/su/tesis-sistemas/scripts/gmatch/images/pucp2020/G_acm2013.png', f_acm2013)
 
 # H tiene los id originales de los cursos equivalentes acm2013 y
 #  sis2018 combinados,  con enlaces de acm2013
 
 H = factory_graph(f_pucp2020_nodes, f_pucp2020_enlaces)
-draw_graph(H, 'images/pucp2020/H_pucp2020.png', f_pucp2020_nodes)
+draw_graph(H, '/home/su/tesis-sistemas/scripts/gmatch/images/pucp2020/H_pucp2020.png', f_pucp2020_nodes)
 ic(H.nodes)
 ic(H.edges)
 
@@ -54,8 +54,8 @@ print("MCS 3 distance:")
 ged = distance(num_node, len(G.nodes), len(H.nodes))
 ic(ged)
 
-draw_graph(H, 'images/pucp2020/H_pucp2020_cmp_acm2013_m1_mcs.png', f_pucp2020_acm2013, mcs)
-draw_mix_graph(H, 'images/pucp2020/H_pucp2020_cmp_acm2013_m1_mcs_mix.png', f_pucp2020_acm2013, mcs, G)
+draw_graph(H, '/home/su/tesis-sistemas/scripts/gmatch/images/pucp2020/H_pucp2020_cmp_acm2013_m1_mcs.png', f_pucp2020_acm2013, mcs)
+draw_mix_graph(H, '/home/su/tesis-sistemas/scripts/gmatch/images/pucp2020/H_pucp2020_cmp_acm2013_m1_mcs_mix.png', f_pucp2020_acm2013, mcs, G)
 
 # T tiene los id originales de los cursos equivalentes acm2013 y
 #  sis2018 combinados,  con enlaces de sis2018
@@ -67,7 +67,7 @@ lenTEdges = len(T.edges)
 ic(lenTNodes)
 ic(lenTEdges)
 
-draw_graph(T, 'images/pucp2020/H_pucp2020_cmp_acm2013_m2.png', f_pucp2020_acm2013)
+draw_graph(T, '/home/su/tesis-sistemas/scripts/gmatch/images/pucp2020/H_pucp2020_cmp_acm2013_m2.png', f_pucp2020_acm2013)
 print("Modelo 2")
 compara(G,T,"pucp2020 originales", "acm2013")
 
@@ -87,8 +87,8 @@ print(f'G nodos:{len(G.nodes)}')
 print(f'T nodos:{len(T.nodes)}')
 ged = distance(num_node, len(G.nodes), len(T.nodes))
 ic(ged)
-draw_graph(T, 'images/pucp2020/H_pucp2020_cmp_acm2013_m2_mcs.png', f_pucp2020_acm2013, mcs)
-draw_mix_graph(T, 'images/pucp2020/H_pucp2020_cmp_acm2013_m2_mcs_mix.png', f_pucp2020_acm2013, mcs, G)
+draw_graph(T, '/home/su/tesis-sistemas/scripts/gmatch/images/pucp2020/H_pucp2020_cmp_acm2013_m2_mcs.png', f_pucp2020_acm2013, mcs)
+draw_mix_graph(T, '/home/su/tesis-sistemas/scripts/gmatch/images/pucp2020/H_pucp2020_cmp_acm2013_m2_mcs_mix.png', f_pucp2020_acm2013, mcs, G)
 
 # obtiene nodos y enlaces comunes
 print("nodos y enlaces comunes model1 pucp2020-acm2013")

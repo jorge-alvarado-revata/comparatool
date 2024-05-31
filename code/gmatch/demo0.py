@@ -7,14 +7,16 @@ print("Nodo G")
 
 ic(G.nodes)
 ic(G.edges)
-draw_graph(G, 'images/demo/demoG.png', demoG)
+draw_graph(G, '/home/su/tesis-sistemas/scripts/gmatch/images/demo/demoG.png', demoG)
+
+#/home/su/tesis-sistemas/scripts/gmatch/images/demo
 
 # model H
 H = factory_graph(demoH, demoH_enlaces)
 print("Nodo H")
 ic(H.nodes)
 ic(H.edges)
-draw_graph(H, 'images/demo/demoH.png', demoH)
+draw_graph(H, '/home/su/tesis-sistemas/scripts/gmatch/images/demo/demoH.png', demoH)
 
 print("modelo 1:")
 compara(G,H,"G", "H")
@@ -34,7 +36,7 @@ ic(ged2)
 
 # def draw_graph(S, f_outname, f_inname, mcs=None) 
 # S y f_inname deben ser sobre el mismo nodo
-draw_graph(H, 'images/demo/mcs.png', demoH, mcs)
+draw_graph(H, '/home/su/tesis-sistemas/scripts/gmatch/images/demo/mcs.png', demoH, mcs)
 
 
-draw_mix_graph(H,'images/demo/mcs_mix.png', demoH, mcs, G)
+draw_mix_graph(H,'/home/su/tesis-sistemas/scripts/gmatch/images/demo/mcs_mix.png', demoH, mcs, G)

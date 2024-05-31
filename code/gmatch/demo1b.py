@@ -9,7 +9,7 @@ ic(G.nodes)
 ic(G.edges)
 ic(len(G.nodes))
 ic(len(G.edges))
-draw_graph(G, 'images/sis2018/G_acm68.png', f_acm68)
+draw_graph(G, '/home/su/tesis-sistemas/scripts/gmatch/images/sis2018/G_acm68.png', f_acm68)
 
 
 # Comparaciones
@@ -20,7 +20,7 @@ ic(H.edges)
 ic(len(H.nodes))
 ic(len(H.edges))
 
-draw_graph(H, 'images/sis2018/H_sis2018_acm68_m1.png', f_sis2018_acm68)
+draw_graph(H, '/home/su/tesis-sistemas/scripts/gmatch/images/sis2018/H_sis2018_acm68_m1.png', f_sis2018_acm68)
 
 print("modelo 1:")
 compara(G,H,"sistemas 2018", "acm68")
@@ -41,13 +41,13 @@ ic(ged)
 
 # def draw_graph(S, f_outname, f_inname, mcs=None) 
 # S y f_inname deben ser sobre el mismo nodo
-draw_graph(H, 'images/sis2018/H_sis2018_acm68_m1_mcs.png', f_sis2018_acm68, mcs)
-draw_mix_graph(H, 'images/sis2018/H_sis2018_acm68_m1_mcs_mix.png', f_sis2018_acm68, mcs, G)
+draw_graph(H, '/home/su/tesis-sistemas/scripts/gmatch/images/sis2018/H_sis2018_acm68_m1_mcs.png', f_sis2018_acm68, mcs)
+draw_mix_graph(H, '/home/su/tesis-sistemas/scripts/gmatch/images/sis2018/H_sis2018_acm68_m1_mcs_mix.png', f_sis2018_acm68, mcs, G)
 
 # sistemas 2017 model 2 (relaciones originales de la carrera)
 
 T = factory_graph(f_sis2018_acm68, f_sis2018_acm68_m2)
-draw_graph(T, 'images/sis2018/H_sis2018_acm68_m2.png', f_sis2018_acm68)
+draw_graph(T, '/home/su/tesis-sistemas/scripts/gmatch/images/sis2018/H_sis2018_acm68_m2.png', f_sis2018_acm68)
 print("Modelo 2")
 compara(G,T,"sistemas 2018 originales", "acm68")
 
@@ -77,8 +77,8 @@ print(num_node)
 
 ged = distance(num_node, len(G.nodes), len(T.nodes))
 ic(ged)
-draw_graph(T, 'images/sis2018/H_sis2018_acm68_m2_mcs.png', f_sis2018_acm68, mcs)
-draw_mix_graph(T, 'images/sis2018/H_sis2018_acm68_m2_mcs_mix.png', f_sis2018_acm68, mcs, G)
+draw_graph(T, '/home/su/tesis-sistemas/scripts/gmatch/images/sis2018/H_sis2018_acm68_m2_mcs.png', f_sis2018_acm68, mcs)
+draw_mix_graph(T, '/home/su/tesis-sistemas/scripts/gmatch/images/sis2018/H_sis2018_acm68_m2_mcs_mix.png', f_sis2018_acm68, mcs, G)
 
 # obtiene nodos y enlaces comunes
 print("nodos y enlaces comunes model1")
